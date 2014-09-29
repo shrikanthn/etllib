@@ -141,6 +141,7 @@ def main(argv=None):
                 diff = len(cols)-len(line)
                 if diff > 0:
                     verboseLog("Column Headers and Row Values Don't Match up: numCols: ["+str(len(cols))+"]: numRowValues: ["+str(len(line))+"]")
+                    continue
         
                 for num in range(0, len(cols)):
                     if ":" in cols[num] and diff > 0:
